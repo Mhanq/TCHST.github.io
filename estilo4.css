@@ -1,0 +1,174 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    text-align: justify;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    background: #7b4397;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo-container {
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flex a columna para apilar verticalmente */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+header .logo {
+    max-height: 80px;
+    margin-bottom: 15px; /* Agrega margen inferior para separar el logo del texto */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+nav {
+    background: #7b4397;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;  /* Este ajuste asegura que las letras del menú sean blancas */
+    text-decoration: none;
+    padding: 15px 20px;  /* Aumenta el ancho del menú */
+    display: block;
+    font-size: 1.1em; /* Aumenta el tamaño del texto en el menú */
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px 0;
+}
+
+main section {
+    margin-bottom: 40px;
+}
+
+main section h2 {
+    font-size: 2em;
+    color: #333;
+}
+
+main section p, main section ul li {
+    font-size: 1.2em;
+    color: #666;
+}
+
+#clientes {
+    display: grid;
+    grid-template-columns: repeat(3, 1.2fr); /* Tres columnas por fila */
+    gap: 20px; /* Espacio entre las cajas */
+    padding: 20px;
+    justify-items: center; /* Centra las cajas en su contenedor */
+}
+
+#clientes section {
+    background: linear-gradient(to right, #f093fb, #f5576c); /* Degradado de fondo */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade sombra */
+    text-align: center;
+    max-width: 350px;
+}
+
+#clientes section img {
+    width: 190px;
+    height: 350px;
+    object-fit: cover; /* Asegura que la imagen se mantenga centrada y sin deformaciones */
+    margin-bottom: 10px;
+}
+
+#clientes h2 {
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+#clientes ul {
+    list-style: none;
+    padding: 0;
+    font-size: 1em;
+}
+
+#clientes section ul {
+    list-style-type: disc; /* Cambia el tipo de viñeta a discos */
+    padding-left: 20px; /* Añade un poco de espacio a la izquierda para la lista */
+    font-size: 1.1em; /* Ajusta el tamaño de fuente si lo deseas */
+}
+
+#clientes ul li {
+    margin-bottom: 8px;
+    color: black !important;
+}
+
+
+footer {
+    background: #7b4397;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #dc2430, #7b4397); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    @media (max-width: 900px) {
+    #clientes {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 600px) {
+    #clientes {
+        grid-template-columns: 1fr; /* Una columna en pantallas muy pequeñas */
+    }
+}
+}
