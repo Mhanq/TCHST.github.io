@@ -69,10 +69,14 @@ nav ul li a {
     padding: 15px 20px;
     display: block;
     font-size: 1.1em;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #555;
+    background-color: #1e3a8a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05);
+    animation: colorChange 1s forwards;
 }
 
 main {
